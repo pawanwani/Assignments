@@ -1,0 +1,134 @@
+body{
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+}
+li{
+    color:white;
+    padding: 5%;
+}
+.nav-link{
+    
+    width: 50%;
+}
+ul{
+    display: flex;
+    float: right;
+    width: 50%;
+}
+ul.no-bullets {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.2rem;  
+}
+a:hover{
+    color: green;
+}
+.top-nav{
+    background-color:black;
+    display: flex;
+}
+.heading-top{
+    color:white;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+.nav-title{
+    width: 50%;
+    
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+thead:first-child{
+    background-color: black;
+}
+th{
+    color:white;
+}
+.sec-search{
+    display: inline-flex;
+    width: 100%;
+    margin-left: 16%;
+}
+
+.search-heading{
+    margin-left: 17%;
+}
+.search-btn{
+     padding: 10px;
+     height: 40px;
+     margin: 7px 0 0 10px;
+     
+}
+.form-data{
+    display: grid;
+    place-items: center;
+}
+.form-details{
+    display: inline-flex;
+    width: 100%;
+}
+.sec-search #searchresult{
+    width: 300px;
+    margin-left: 10px;
+}
+.sec-search select{
+    width:200px;
+}
+.sec-search #minPrice,#maxPrice{
+    margin-left: 5px;
+    width:100px;
+    display: none;
+}
+input[type=text],input[type=number], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+ 
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+#displaybook-part,#addbook-part {
+    display: none;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add book</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div>
+        <div class="top-nav">
+            <div class="nav-title">
+                <h1 class="heading-top">Book Management System</h1>
+            </div>
+            <div class="nav-link">
+                <ul class="no-bullets">
+                    <li>
+                        <a href="/index.html">HOME</a>  
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="form-data">
+            <div>
+                <h1>Add Book Details</h1>
+            </div>
+            <div class="container">
+                <form>
+                    <input type="number" id="id" placeholder="Enter ID">
+                <div class="form-details">
+                    <input type="text" id="title" placeholder="Book Title">
+                    <input type="text" id="author-name" placeholder="Book Author">
+                </div>
+                <div class="form-details">
+                    <input type="number" id="rating" max="5" placeholder="Rating">
+                    <input type="number" id="price" placeholder="Price">
+                </div>
+                <label for="subject">Description</label>
+                <textarea id="description"placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit"  id="submit-form" value="Submit">
+                </form>
+            </div> 
+        </div>
+    </div>
+    <script src="./dist/main.js"></script>
+</body>
+</html>

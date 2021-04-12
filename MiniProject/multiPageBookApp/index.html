@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="top-nav">
+        <div class="nav-title">
+            <h1 class="heading-top">Book Management System</h1>
+        </div>
+        <div class="nav-link">
+            <ul class="no-bullets">
+                <li>
+                    <a href="/addbook.html">ADD BOOK</a>  
+                </li>
+                <li>
+                    <a href="#" id="myBtn">SHOW LIST</a>  
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h2 class="search-heading">SEARCH BOOK</h2>
+            <div class="sec-search">
+                <select id="search-options" onchange="myFunction()">
+                    <option value="" disabled selected>SEARCH BY</option>
+                    <option value="ID">ID</option>
+                    <option value="TITLE">TITLE</option>
+                    <option value="AUTHOR">AUTHOR</option>
+                    <option value="MIN RATING">MIN RATING</option>
+                    <option value="Price">Price</option>
+                </select>
+                <input type="text" id="searchresult" placeholder="Enter a Value">
+                <input type="number" id="minPrice" placeholder="Min Price">
+                <input type="number" id="maxPrice" placeholder="Max Price">
+                <button class="search-btn" id="search-btn">SEARCH <i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <table class="center">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Rating</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                  </tr>
+            </thead>
+            <tbody id ="myTable">
+            </tbody>
+          </table>
+    </div>
+    <script src="./dist/main.js"></script>
+</body>
+</html>
