@@ -6,4 +6,3 @@ delay(3000).then(()=>{
     console.log("Executed after 3 SECS");
 })
 
-setT

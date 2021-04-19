@@ -30,6 +30,7 @@ if(showtable!=null){
    showtable.onclick=function(){
       let localdatax = JSON.parse(localStorage.getItem('data'));
       assignValue(localdatax);
+      book1.removerows(books);
       book1.displayBooks(books);
    }
 }

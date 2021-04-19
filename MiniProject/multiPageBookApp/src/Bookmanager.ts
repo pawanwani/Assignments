@@ -17,6 +17,7 @@ export class BookManager{
     localStorage.setItem('data',JSON.stringify(old_data));        
     }    
     displayBooks(books){
+        this.removerows(books);
         let table =document.getElementById("myTable")
         for( let i=0 ; i<books.length;i++){
             let row = `<tr>
@@ -99,11 +100,11 @@ export class BookManager{
 
         }
     }
+    removerows(books){
+        let mytbl = document.getElementById("myTable");
+        let tr = mytbl.getElementsByTagName('tr');
+        for(let i=0;i<books.length;i++){
+            tr[i].style.display = "none";
+        }   
+    }
 }
-
-/* cost foundItem = items.find((item)=>{
-    return item.title === 'title_name'
-}) */
-/* cost foundItem = items.filter((item)=>{
-    return item.rating >=4
-}) */
