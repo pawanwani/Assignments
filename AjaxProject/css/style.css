@@ -1,0 +1,30 @@
+body{
+    margin : 0px;
+}
+.col-md-6{
+    margin-left: auto;
+    margin-right: auto;
+}
+.addbook-form input[type='text'],input[type='number'],textarea{
+    margin-top: 25px;
+}
+#rating{
+    margin-left: 10px;
+}
+.form-title{
+   text-align: center;
+   margin-top: 20px;
+}
+.table{
+    margin-top: 15px
+}
+.horizontal-view{
+    display: flex;
+   
+}
+.horizontal-view select , input[type='text'],#search-btn{
+    margin-top:50px;
+}
+.search-btn,.search-box{
+    margin-left: 15px;
+}
